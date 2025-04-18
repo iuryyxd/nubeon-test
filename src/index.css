@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #f5f5fa;
+  --color-green-light: #525d5a;
+  --color-green-dark: #00543a;
+  --color-orange: #e56f01;
+  --color-border: #ccd9d5;
+  --color-gray: #c0c0c0;
+
+  --spacing-max-width: 1314px;
+
+  --animate-accordion-down: accordion-down 0.3s ease-out;
+  --animate-accordion-up: accordion-up 0.3s ease-out;
+
+  @keyframes accordion-down {
+    0% {
+      opacity: 0;
+      height: 0;
+    }
+    100% {
+      opacity: 1;
+      height: 300px;
+    }
+  }
+
+  @keyframes accordion-up {
+    0% {
+      opacity: 1;
+      height: 300px;
+    }
+    100% {
+      opacity: 0;
+      height: 0px;
+    }
+  }
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-black);
+  font-family: "Inter", sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+}
